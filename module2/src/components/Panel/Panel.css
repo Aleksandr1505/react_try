@@ -1,0 +1,10 @@
+.section {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: teal;
+    padding: 10px;
+}
+
+.title {
+    text-align: center;
+}

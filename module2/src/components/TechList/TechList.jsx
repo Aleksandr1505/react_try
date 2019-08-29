@@ -1,12 +1,13 @@
 import React from "react";
-
-const TechList = ({ items }) => (
-  <ul>
+import {StyledList, StyledItem} from './TechStyledList.js'
+const TechList = ({ items, color }) => (
+  <StyledList bgColor={color}>
     {items.map(item => (
-      <li key={item.id}>
+      <StyledItem Color="green" key={item.id}>
         <span>{item.name}</span>
-      </li>
+      </StyledItem>
     ))}
-  </ul>
+  </StyledList>
 );
+
 export default TechList;
